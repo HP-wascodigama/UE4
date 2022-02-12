@@ -87,7 +87,7 @@ void AMyPawn::Move_XAxis(float AxisValue)
 
 void AMyPawn::Move_YAxis(float AxisValue)
 {
-	// Move at 100 units per second right or left
+	// Move at 100 units per second right or left, it's upto you how fast you want to move
 	CurrentVelocity.Y = FMath::Clamp(AxisValue, -1.0f, 1.0f) * 100.0f;
 }
 
